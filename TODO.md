@@ -1,5 +1,5 @@
 # Implementation TODO
-- [ ] linked list implementation its basic algo
+- [x] linked list implementation its basic algo
 - [ ] doubly linked list implementation its basic algo
 - [ ] stack implementation with array, linked list its basic algo
 - [ ] queue implementation with array, linked list its basic algo
@@ -21,7 +21,7 @@
 
 
 # Doc TODO
-##### NOTE: add #what_is? #fact? for short documentation in the code
+**NOTE**: add #what_is? #fact? for short documentation in the code
 
 
 
