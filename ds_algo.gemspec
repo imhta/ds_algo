@@ -1,7 +1,7 @@
 # ds_algo.gemspec
 Gem::Specification.new do |s|
   s.name        = 'ds_algo'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.date        = '2019-07-26'
   s.summary     = "ruby gem for data structures and algorithms"
   s.description = "collection of data structures and algorithms for learning and to build"
