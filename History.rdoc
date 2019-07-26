@@ -1,0 +1,6 @@
+=== 0.0.2 / 2019-07-26
+* Setup project
+
+=== 0.0.1 / 2019-07-26
+* Project init
+* Hello world added
