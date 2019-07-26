@@ -7,6 +7,7 @@
 - [ ] min heap its basic algo
 - [ ] max heap its basic algo
 - [ ] binary search tree its basic algo
+- [ ] trie implementation
 - [ ] hybird data structures its basic algo
 - [ ] graph its basic algo
 
@@ -18,7 +19,8 @@
 
 ## Extend algo for primitive data type
 
-# Documentation
+
+# Doc TODO
 ##### NOTE: add #what_is? #fact? for short documentation in the code
 
 
