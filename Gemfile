@@ -2,4 +2,4 @@
 
 source 'https://rubygems.org'
 
-rspec
+gem 'rspec', '~> 3.8'
