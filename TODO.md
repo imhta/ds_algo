@@ -19,7 +19,7 @@
 ## Extend algo for primitive data type
 
 # Documentation
-## NOTE: add #what_is? #fact? for short documentation in the code
+##### NOTE: add #what_is? #fact? for short documentation in the code
 
 
 
