@@ -1,0 +1,60 @@
+# frozen_string_literal: true
+
+require 'data_struct/linked_list'
+
+RSpec.describe 'LinkedList' do
+  subject('linked_list') { LinkedList.new }
+  describe '#shift' do
+    it 'shifting value infront of the linked list' do
+      linked_list.shift 2
+      linked_list.shift 6
+      expect(linked_list.to_a).to eq([6, 2])
+    end
+  end
+  describe '#push' do
+    it 'pushing value back of the linked list' do
+      linked_list.push 2
+      linked_list.push 6
+      expect(linked_list.to_a).to eq([2, 6])
+    end
+  end
+
+  describe '#pop' do
+    it 'poping value from linked list' do
+      linked_list.push 2
+      linked_list.push 6
+      linked_list.push 8
+      linked_list.push 6
+      linked_list.pop
+      expect(linked_list.to_a).to eq([2, 6, 8])
+    end
+  end
+  describe '#to_s' do
+    it 'linked list to string' do
+      linked_list.push 2
+      linked_list.push 6
+      linked_list.push 8
+      linked_list.push 6
+      expect(linked_list.to_s).to eq("2 6 8 ")
+    end
+  end
+  describe '#to_a' do
+    it 'linked list to array' do
+      linked_list.push 2
+      linked_list.push 6
+      linked_list.push 8
+      linked_list.push 6
+      expect(linked_list.to_a).to eq([2, 6, 8, 6])
+    end
+  end
+
+  describe ':length' do
+    it 'linked list length' do
+      linked_list.push 2
+      linked_list.push 6
+      linked_list.push 8
+      linked_list.push 6
+      expect(linked_list.length).to eq(4)
+    end
+  end
+end
