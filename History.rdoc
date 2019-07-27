@@ -1,3 +1,6 @@
+=== 0.0.4 / 2019-07-27
+* Added with stack, queue
+
 === 0.0.3 / 2019-07-27
 * Added with linked list
 * CI setup 
