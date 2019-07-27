@@ -11,13 +11,13 @@ gem install ds_algo
 
 ## Data Structures
 
-Everything in computer is data. When you dealing with computer, you have understand the structure of the data. So, Data structures are funtamental part of software engineering and development.
+Everything in computer is data. When you are dealing with computer, you have to understand the structure of the data. So, Data structures are funtamental part of software engineering and development.
 
 ### Linked List
 Linked list is like chain of data. They are made of nodes, each node has a data, next_val or pre_val and next_val.
 There are two type of linked list 
-    - Singly
-    - Doubly
+- Singly
+- Doubly
 
 #### Singly
 
