@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# This is a implementation of Queue using an array
 class Queue
   attr_reader :length
   def initialize

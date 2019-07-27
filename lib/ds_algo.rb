@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
+# This is class used to learn about algo and ds
 class DsAlgo
+  # #ds-eff? => nil
+  # used to know the efficiency of the data structure, its a table in a terminal
   def ds_eff?
     puts '+-----------------------------------------------------------------------------------+'
     puts '|                          Efficency table for DsAlgo                               |'
