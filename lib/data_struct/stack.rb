@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# This is a implementation of stack using array
 class Stack
   attr_reader :length
   def initialize

@@ -2,7 +2,9 @@
 
 # lib/data_struct/linked_list.rb
 
+# This module consists of all nodes and implementation of linked list
 module LinkedList
+  # This node for Singly Linked list implementation.
   class SinglyNode
     attr_accessor :data, :next_val
     def initialize(data, next_val = nil)
@@ -10,7 +12,7 @@ module LinkedList
       @next_val = next_val
     end
   end
-
+  # This node for Doubly Linked list implementation.
   class DoublyNode
     attr_accessor :data, :next_val, :pre_val
     def initialize(data, pre_val = nil, next_val = nil)
@@ -19,7 +21,7 @@ module LinkedList
       @pre_val = pre_val
     end
   end
-
+  # This is a singly linked list implementation.
   class Singly
     attr_reader :head, :length
     def initialize
@@ -118,7 +120,7 @@ module LinkedList
       @length -= 1
     end
   end
-
+  # This is a Doubly linked list implementation.
   class Doubly
     attr_reader :head, :length
     def initialize
