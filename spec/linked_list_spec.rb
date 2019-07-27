@@ -35,7 +35,7 @@ RSpec.describe 'LinkedList' do
       linked_list.push 6
       linked_list.push 8
       linked_list.push 6
-      expect(linked_list.to_s).to eq("2 6 8 ")
+      expect(linked_list.to_s).to eq('2 6 8 ')
     end
   end
   describe '#to_a' do
@@ -55,6 +55,33 @@ RSpec.describe 'LinkedList' do
       linked_list.push 8
       linked_list.push 6
       expect(linked_list.length).to eq(4)
+    end
+  end
+  describe '#each' do
+    it 'each value in linked list' do
+      linked_list.push 2
+      linked_list.push 6
+      linked_list.push 8
+      linked_list.push 6
+      expect(linked_list.each { |x| x }).to eq([2, 6, 8, 6])
+    end
+  end
+  describe '#index_of' do
+    it 'linked list index of 8' do
+      linked_list.push 2
+      linked_list.push 6
+      linked_list.push 8
+      linked_list.push 6
+      expect(linked_list.index_of(8)).to eq(8)
+    end
+  end
+  describe '#index' do
+    it 'linked list value at index' do
+      linked_list.push 2
+      linked_list.push 6
+      linked_list.push 8
+      linked_list.push 6
+      expect(linked_list.index(1)).to eq(6)
     end
   end
 end
