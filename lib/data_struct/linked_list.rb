@@ -21,7 +21,7 @@ module LinkedList
   end
 
   class Singly
-    attr_accessor :head, :length
+    attr_reader :head, :length
     def initialize
       @head = nil
       @length = 0
@@ -120,7 +120,7 @@ module LinkedList
   end
 
   class Doubly
-    attr_accessor :head, :length
+    attr_reader :head, :length
     def initialize
       @head = nil
       @length = 0
