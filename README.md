@@ -1,4 +1,5 @@
-# ds_algo [![Build Status](https://travis-ci.com/imhtapm/ds_algo.svg?branch=master)](https://travis-ci.com/imhtapm/ds_algo)
+# ds_algo
+ [![Build Status](https://travis-ci.com/imhtapm/ds_algo.svg?branch=master)](https://travis-ci.com/imhtapm/ds_algo)
 
 ruby gem for data structures and algorithms
 
