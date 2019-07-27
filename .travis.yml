@@ -10,5 +10,8 @@ deploy:
     secure: JtmSDeHsu/xRyyH0b4jiGN6grHaJ7d6nsN1eU0KJYUKxEmYkgi5Ik9r1iRUpQRQkZAmf1OFWl2e6vJo17brS1j1jXOgNMAIgGqAJ3BPw0Nynm/uQibcNXfwWDAudrioSwyL6TojPdIAc/6HgmEEhNcGX315DjJt2XEDeGok3hUhkk6tNV4/7RprRQynmtWxxim10dbagQbMT35BHw04Smy2KQtLDJhR5GnLS3vzXbaE2Z/RfFrW8w0HKV81WD8o+iF5kknht5T+vi3AZZ36fvs0ZjLrMPYOhtYV9u1MPT4gixA/z3G+KOn1STIdICde+HdOC0AsXVJ/7a/UdNRG9UkeYWE6heFT6QRWT6tTlsI+eVmUlRARyheIbrv5dZmobfX+0sRmKXkw0rVC/2YdCUUWEQNqBqf5LEEnVC9iw1Mc+Ts0V01RoHphtC0DfH1H3x+4hFlHHrZFja3UDeSw6UeHoQTeVnnD7mbrq4Pe1nKPzBw8xQnaEwaT4NbLkDKvg1lf+4XtCS8ePaoU8GrBzTDrFr8mLId/zs+Bi1G4zu+ws+X2MxNlZ84h7QK1Mq25fKZXn25mK5GdR5F2ERWlUzV4yQFNW0qfybSta4Gz/wF4uKy70+T47AR5ycFIv6PKz09O1FOI3e9bWq4UzwRcxuDlTRkkPP4Q4weVS5tvOMwM=
   gem: ds_algo
   on:
+    branches:
+      only:
+      - master
     tags: true
     repo: imhtapm/ds_algo
