@@ -130,7 +130,7 @@ module LinkedList
       in_length
       return @head = DoublyNode.new(val) if @head.nil?
 
-      new_head = DoublyNode.new val, nil, @head 
+      new_head = DoublyNode.new val, nil, @head
       @head.pre_val = new_head
       @head = new_head
     end

@@ -1,34 +1,35 @@
 # frozen_string_literal: true
 
-class Stack
+class Queue
   attr_reader :length
   def initialize
-    @stack = []
+    @queue = []
     @length = 0
   end
 
-  def push(val)
+  def in val
     in_length
-    @stack.push val
+    @queue.push val
   end
-
-  def pop
+  def out
     de_length
-    @stack.pop
+    @queue.shift
   end
 
-  def top
-    @stack[-1]
+  def front
+    @queue[0]
   end
-
+  def last
+    @queue[-1]
+  end
   def empty?
-    @stack.empty?
+    @queue.empty?
   end
-
+  
   def to_a
-    @stack
+    @queue
   end
-
+  
   private
 
   def in_length
@@ -37,5 +38,5 @@ class Stack
 
   def de_length
     @length -= 1
-  end
+  end  
 end
