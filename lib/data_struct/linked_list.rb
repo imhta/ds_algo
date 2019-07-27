@@ -105,7 +105,7 @@ class LinkedList
     end
     raise 'value not found'
   end
-
+  
   private
 
   def in_length
