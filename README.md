@@ -59,5 +59,5 @@ queue = Queue.new
 
 ## Contribution
 Feel free to make pull request. 
-.
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
+
