@@ -1,5 +1,5 @@
 # ds_algo
- [![Build Status](https://travis-ci.com/imhtapm/ds_algo.svg?branch=master)](https://travis-ci.com/imhtapm/ds_algo)
+[![Build Status](https://travis-ci.com/imhtapm/ds_algo.svg?branch=master)](https://travis-ci.com/imhtapm/ds_algo) [![Gem Version](https://badge.fury.io/rb/ds_algo.svg)](https://badge.fury.io/rb/ds_algo)
 
 This ruby gem is aimed to build a library for data structures and algorithms. with learning methods, facts.
 
@@ -55,7 +55,18 @@ require 'data_struct/queue'
 
 queue = Queue.new
 ```
-##### Methods => #in, #out, #front, #last, #empty?,  #to_a, :length
+### Tree
+Binary search tree (BST) is a data structure that quickly allows us to maintain a sorted list of numbers.
+
+- It is called a binary tree because each tree node has maximum of two children.
+- It is called a search tree because it can be used to search for the presence of a number in O(log(n)) time.
+
+```
+require 'data_struct/queue'
+
+bst = Tree.BST
+```
+##### Methods => #insert, #find, #heigth?, #to_a, #empty?, :length
 
 ## Contribution
 Feel free to make pull request. 
