@@ -1,3 +1,6 @@
+=== 0.0.5 / 2019-07-28
+* Added with basic bst
+
 === 0.0.4 / 2019-07-27
 * Added with stack, queue
 
