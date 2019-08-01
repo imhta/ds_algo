@@ -12,6 +12,34 @@ RSpec.describe 'Tree' do
                 expect(bst.to_a).to eq([5,4,6,7])
             end
         end
+        describe '#delete' do
+            it 'delete value inside a binary search tree' do
+                bst.insert 5
+                bst.insert 4
+                bst.insert 7
+                bst.insert 6
+                bst.delete 4
+                expect(bst.to_a).to eq([5,7,6])
+            end
+        end
+        describe '#min' do
+            it 'min value inside a binary search tree' do
+                bst.insert 5
+                bst.insert 4
+                bst.insert 7
+                bst.insert 6
+                expect(bst.min.data).to eq(4)
+            end
+        end
+        describe '#max' do
+            it 'max value inside a binary search tree' do
+                bst.insert 5
+                bst.insert 4
+                bst.insert 7
+                bst.insert 6
+                expect(bst.max.data).to eq(7)
+            end
+        end
         describe '#to_a' do
             it 'convert bst into array' do
                 bst.insert 5

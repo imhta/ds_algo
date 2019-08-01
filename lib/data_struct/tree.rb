@@ -33,13 +33,49 @@ module Tree
       in_length
       @root = recur_insert @root, val
     end
+    def min(node = @root)
+      cur = node
+      unless node.left.nil?
+        cur = cur.left
+      end
+      cur
+    end
+    def max(node = @root)
+      cur = node
+      unless node.right.nil?
+        cur = cur.right
+      end
+      cur
+    end
+    def delete(key, node = @root)
+      return @root = node if node.nil?
+
+      if key < node.data 
+        node.left = delete(key, node.left)
+      elsif key > node.data 
+        node.right = delete(key, node.right)
+      else
+        if node.left.nil?
+          temp = node.right
+          node = nil
+          return temp
+        elsif node.right.nil?
+          temp = node.left
+          node = nil
+          return temp
+        end
+
+        temp = min(node.right)
+        node.data = temp.data
+        node.right = delete(temp.data, node.right)
+      end
+      @root = node
+    end
     def find val
       recur_search @root, val
     end
     def to_a
-      @state_arr = []
-      recur_pre_order(@root)
-      @state_arr
+      recur_pre_order @root, []
     end
     def empty? 
       @length.zero?
@@ -47,6 +83,7 @@ module Tree
     def height?
       recur_max_depth @root
     end
+
     private
     def recur_insert node, val
       return BinaryNode.new(val) if node.nil? 
@@ -66,13 +103,15 @@ module Tree
         return recur_search(node.right, val)
       end
       recur_search(node.left, val)
+
     end
 
-    def recur_pre_order node
+    def recur_pre_order node, state
       return if node.nil?
-      @state_arr << node.data
-      recur_pre_order(node.left) 
-      recur_pre_order(node.right)
+      state << node.data
+      recur_pre_order(node.left, state) 
+      recur_pre_order(node.right, state)
+      state
     end
     def recur_max_depth node
       return 0 if node.nil?
