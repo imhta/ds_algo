@@ -1,5 +1,5 @@
 # ds_algo
-[![Build Status](https://travis-ci.com/imhtapm/ds_algo.svg?branch=master)](https://travis-ci.com/imhtapm/ds_algo) [![Gem Version](https://badge.fury.io/rb/ds_algo.svg)](https://badge.fury.io/rb/ds_algo)
+[![Build Status](https://travis-ci.com/imhta/ds_algo.svg?branch=master)](https://travis-ci.com/imhta/ds_algo) [![Gem Version](https://badge.fury.io/rb/ds_algo.svg)](https://badge.fury.io/rb/ds_algo)
 
 This ruby gem is aimed to build a library for data structures and algorithms. with learning methods, facts.
 
