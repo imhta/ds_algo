@@ -5,10 +5,10 @@ require 'data_struct/linked_list'
 RSpec.describe 'LinkedList' do
   describe 'Singly' do
     subject('linked_list') { LinkedList::Singly.new }
-    describe '#shift' do
-      it 'shifting value infront of the linked list' do
-        linked_list.shift 2
-        linked_list.shift 6
+    describe '#unshift' do
+      it 'unshifting value infront of the linked list' do
+        linked_list.unshift 2
+        linked_list.unshift 6
         expect(linked_list.to_a).to eq([6, 2])
       end
     end
@@ -89,11 +89,11 @@ RSpec.describe 'LinkedList' do
 
   describe 'Doubly' do
     subject('linked_list') { LinkedList::Doubly.new }
-    describe '#shift' do
-      it 'shifting value infront of the linked list' do
-        linked_list.shift 6
-        linked_list.shift 2
-        linked_list.shift 6
+    describe '#unshift' do
+      it 'unshifting value infront of the linked list' do
+        linked_list.unshift 6
+        linked_list.unshift 2
+        linked_list.unshift 6
         expect(linked_list.to_a).to eq([6, 2, 6])
       end
     end
