@@ -19,7 +19,7 @@ class Stack
   end
 
   def top
-    @stack[-1]
+    @stack.last
   end
 
   def empty?

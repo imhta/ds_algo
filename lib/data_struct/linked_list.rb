@@ -29,7 +29,7 @@ module LinkedList
       @length = 0
     end
 
-    def shift(val)
+    def unshift(val)
       in_length
       @head = SinglyNode.new val, @head
     end
@@ -128,7 +128,7 @@ module LinkedList
       @length = 0
     end
 
-    def shift(val)
+    def unshift(val)
       in_length
       return @head = DoublyNode.new(val) if @head.nil?
 

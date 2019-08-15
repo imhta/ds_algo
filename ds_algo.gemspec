@@ -3,8 +3,8 @@
 # ds_algo.gemspec
 Gem::Specification.new do |s|
   s.name        = 'ds_algo'
-  s.version     = '0.0.5'
-  s.date        = '2019-07-28'
+  s.version     = '0.0.6'
+  s.date        = '2019-08-15'
   s.summary     = 'ruby gem for data structures and algorithms (under development)'
   s.description = 'collection of data structures and algorithms for learning and to build (under development)'
   s.authors     = ['imhtapm']
