@@ -19,11 +19,11 @@ class Queue
   end
 
   def front
-    @queue[0]
+    @queue.first
   end
 
   def last
-    @queue[-1]
+    @queue.last
   end
 
   def empty?
