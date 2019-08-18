@@ -33,7 +33,10 @@ module LinkedList
       in_length
       @head = SinglyNode.new val, @head
     end
-
+    def shift
+      de_length
+      @head = @head.next_val
+    end
     def push(val)
       in_length
       return @head = SinglyNode.new(val) if @head.nil?
