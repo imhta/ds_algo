@@ -12,6 +12,14 @@ RSpec.describe 'LinkedList' do
         expect(linked_list.to_a).to eq([6, 2])
       end
     end
+    describe '#shift' do
+      it 'shifting value infront of the linked list' do
+        linked_list.unshift 2
+        linked_list.unshift 6
+        linked_list.shift
+        expect(linked_list.to_a).to eq([2])
+      end
+    end
     describe '#push' do
       it 'pushing value back of the linked list' do
         linked_list.push 2
@@ -95,6 +103,15 @@ RSpec.describe 'LinkedList' do
         linked_list.unshift 2
         linked_list.unshift 6
         expect(linked_list.to_a).to eq([6, 2, 6])
+      end
+    end
+    describe '#shift' do
+      it 'shifting value infront of the linked list' do
+        linked_list.unshift 2
+        linked_list.unshift 6
+        linked_list.unshift 6
+        linked_list.shift
+        expect(linked_list.to_a).to eq([2, 6])
       end
     end
     describe '#push' do
