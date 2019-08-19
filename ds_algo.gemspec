@@ -15,6 +15,6 @@ Gem::Specification.new do |s|
                    'lib/data_struct/queue.rb',
                    'lib/data_struct/tree.rb']
   s.homepage    =  'https://rubygems.org/gems/ds_algo'
-  s.metadata    = { "source_code_uri" => "https://github.com/imhtapm/ds_algo" }
+  s.metadata    = { "source_code_uri" => "https://github.com/imhta/ds_algo" }
   s.license = 'MIT'
 end
